@@ -1,0 +1,279 @@
+body {
+    background-image: url(/img/Main\ Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.home:hover {
+    color: rgb(84, 84, 255);
+}
+
+.about:hover {
+    color: rgb(84, 84, 255);
+}
+
+.protfoloio:hover {
+    color: rgb(84, 84, 255);
+}
+
+.services:hover {
+    color: rgb(84, 84, 255);
+}
+
+.account:hover {
+    color: rgb(84, 84, 255);
+}
+
+.home,
+.about,
+.services,
+.protfoloio,
+.contact,
+.account {
+    padding-left: 40px;
+    color: white;
+    padding-top: 30px;
+}
+
+.services {
+    color: rgb(84, 84, 255);
+}
+
+.imgLink {
+    padding: 10px 0px 0px 40px;
+    margin: 0;
+    width: 100px;
+    height: 70px;
+}
+
+#home,
+#about,
+#services,
+#protfoloio,
+#blog,
+#carrer,
+#download,
+#contact,
+#account {
+    display: contents;
+}
+
+.fa-linkedin,
+.fa-twitter,
+.fa-whatsapp,
+.fa-facebook,
+.fa-instagram,
+.fa-google {
+    padding: 28px 0px 0px 35px;
+    font-size: 20px;
+
+    color: white;
+}
+
+#logo {
+    padding-left: 490px;
+}
+
+#side {
+    padding-left: 100px;
+}
+
+#services {
+    color: white;
+}
+
+#dropDown {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#colorOfDropdown {
+    color: white;
+}
+
+#colorOfDropdown:hover {
+    background-color: black;
+}
+
+/* Contact us */
+section {
+    padding: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+/* Contact us */
+section {
+    padding: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+/* about us */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #333, #666);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team li {
+    margin: 20px;
+    width: 200px;
+}
+
+.team img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mission {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Adding Book Form */
+.form-container {
+    background-color: #fff;
+    margin: 7.5px;
+    margin-left: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group .helper-text {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.form-group .error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}

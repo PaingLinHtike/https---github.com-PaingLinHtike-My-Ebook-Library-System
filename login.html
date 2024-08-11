@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Sign Logo.png">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/ca2a4fa9b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="Login-form">
+        <form action="">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1 id="label" style="text-align: center;">Welcome Back</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon">
+                        <a style="background-color: rgb(0, 183, 255); padding: 15px;" href="#"
+                            class="fa fa-instagram"></a>
+                        <a style="margin: 0px 98px 0px 98px; background-color: rgb(0, 183, 255); padding: 15px;"
+                            href="#" class="fa fa-twitter"></a>
+                        <a style="background-color: rgb(230, 37, 37); padding: 15px;" href="#" class="fa fa-google"></a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="name">Name</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td id="e-mail">Email Address</td>
+                </tr>
+                <tr>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td id="password">Password</td>
+                </tr>
+                <tr>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="para"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" id="btn">Log In</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const nameInput = document.querySelector("input[type='text']");
+            const emailInput = document.querySelector("input[type='email']");
+            const passwordInput = document.querySelector("input[type='password']");
+            const messageParagraph = document.getElementById("para");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+                const password = passwordInput.value.trim();
+
+                if (name === "Paing Lin Htike" && email === "plh@gmail.com" && password === "123456") {
+                    window.location.href = "homePage.html";
+                } else if (name !== "Paing Lin Htike") {
+                    messageParagraph.textContent = "Name Wrong";
+                } else if (email !== "plh@gmail.com") {
+                    messageParagraph.textContent = "Email Wrong";
+                } else if (password !== "123456") {
+                    messageParagraph.textContent = "Password Wrong";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
