@@ -1,279 +1,202 @@
 body {
-    background-image: url(/img/Main\ Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: black;
-    opacity: 0.8;
-}
-
-.home:hover {
-    color: rgb(84, 84, 255);
-}
-
-.about:hover {
-    color: rgb(84, 84, 255);
-}
-
-.protfoloio:hover {
-    color: rgb(84, 84, 255);
-}
-
-.services:hover {
-    color: rgb(84, 84, 255);
-}
-
-.account:hover {
-    color: rgb(84, 84, 255);
-}
-
-.home,
-.about,
-.services,
-.protfoloio,
-.contact,
-.account {
-    padding-left: 40px;
-    color: white;
-    padding-top: 30px;
-}
-
-.services {
-    color: rgb(84, 84, 255);
-}
-
-.imgLink {
-    padding: 10px 0px 0px 40px;
     margin: 0;
-    width: 100px;
-    height: 70px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4e5c4, #d3d3d3);
+    /* Gradient with Soft Beige and Light Gray */
+    color: #2c2c2c;
+    /* Dark Gray for text */
 }
+/* Navigation Bar */
 
-#home,
-#about,
-#services,
-#protfoloio,
-#blog,
-#carrer,
-#download,
-#contact,
-#account {
-    display: contents;
-}
-
-.fa-linkedin,
-.fa-twitter,
-.fa-whatsapp,
-.fa-facebook,
-.fa-instagram,
-.fa-google {
-    padding: 28px 0px 0px 35px;
-    font-size: 20px;
-
-    color: white;
-}
-
-#logo {
-    padding-left: 600px;
-}
-
-#side {
-    padding-left: 100px;
-}
-
-#services {
-    color: white;
-}
-
-#dropDown {
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-#colorOfDropdown {
-    color: white;
-}
-
-#colorOfDropdown:hover {
-    background-color: black;
-}
-
-/* Contact us */
-section {
-    padding: 1rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding: 0.5rem 0;
-}
-
-/* Contact us */
-section {
-    padding: 1rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding: 0.5rem 0;
-}
-
-/* about us */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar {
     display: flex;
     justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background-image: linear-gradient(to bottom, #333, #666);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+    /* font-weight: bold; */
     color: #fff;
 }
 
-.team {
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding-right: 9px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px;
+    font-family: "Open Sans";
 }
 
-.team li {
-    margin: 20px;
-    width: 200px;
+.navbar-links li {
+    display: inline;
 }
 
-.team img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.mission {
-    background-color: #f7f7f7;
-    padding: 20px;
+.navbar-links a:hover {
+    color: red;
 }
 
-/* Adding Book Form */
+/* Form Container */
 .form-container {
-    background-color: #fff;
-    margin: 7.5px;
-    margin-left: 30%;
-    padding: 30px;
+    background: #f0f0f5;
+    /* Very light grayish color, slightly off-white */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.form-container:hover {
-    transform: scale(1.02);
-}
-
-h2 {
-    text-align: center;
+.form-container h2 {
+    color: #2c2c2c;
+    /* Dark Gray */
     margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
+    text-align: center;
+    /* Center the heading */
+    font-size: 28px;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-label {
+.form-group label {
     display: block;
     margin-bottom: 8px;
+    color: #2c2c2c;
+    /* Dark Gray */
     font-weight: bold;
-    color: #555;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="file"],
-select {
+.form-group input,
+.form-group select {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    transition: border-color 0.3s ease;
+    border: 1px solid #a83c3c;
+    /* Muted Red */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    /* Keep input background white for readability */
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="file"]:focus,
-select:focus {
-    border-color: #007bff;
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #374f6a;
+    /* Deep Blue */
+    box-shadow: 0 0 8px rgba(55, 79, 106, 0.5);
+    /* Blue shadow on focus */
     outline: none;
 }
 
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-button {
+button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: #a83c3c;
+    /* Muted Red for the button */
+    color: white;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: #0056b3;
+button[type="submit"]:hover {
+    background-color: #7b2b2b;
+    /* Darker red on hover */
+    transform: translateY(-3px);
 }
 
-.form-group .helper-text {
-    font-size: 12px;
-    color: #888;
-    margin-top: 5px;
+/* Contact Us Section */
+section {
+    background: linear-gradient(135deg, #374f6a, #2c2c2c);
+    /* Gradient with Deep Blue and Dark Gray */
+    padding: 40px 20px;
+    text-align: center;
+    color: #f4e5c4;
+    /* Soft Beige text */
+    animation: slideUp 1s ease-in-out;
 }
 
-.form-group .error {
-    color: #ff0000;
-    font-size: 12px;
-    margin-top: 5px;
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f4e5c4;
+    /* Soft Beige */
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section a {
+    color: #d3d3d3;
+    /* Light Gray links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #f1c40f;
+    /* Gold color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,121 +1,167 @@
 body {
-    background-image: url(/img/Main\ Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: black;
-    opacity: 0.8;
-}
-
-.about:hover {
-    color: rgb(84, 84, 255);
-}
-
-.protfoloio:hover {
-    color: rgb(84, 84, 255);
-}
-
-.contact:hover {
-    color: rgb(84, 84, 255);
-}
-
-.services:hover {
-    color: rgb(84, 84, 255);
-}
-
-.account:hover {
-    color: rgb(84, 84, 255);
-}
-
-.home,
-.about,
-.services,
-.protfoloio,.account {
-    padding-left: 40px;
-    color: white;
-    padding-top: 30px;
-}
-
-
-
-.account {
-    color: rgb(84, 84, 255);
-}
-
-.imgLink {
-    padding: 10px 0px 0px 40px;
     margin: 0;
-    width: 100px;
-    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #000000, #ffffff); /* Black to White */
+    background: linear-gradient(to right, #ffffff, #000000); 
+    color: #333;
+        /* Dark gray text for good readability */
 }
 
-#home,
-#about,
-#services,
-#protfoloio,
-#blog,
-#carrer,
-#download,
-#contact,#account {
-    display: contents;
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
 }
 
-.fa-linkedin,
-.fa-twitter,
-.fa-whatsapp,
-.fa-facebook,
-.fa-instagram,
-.fa-google {
-    padding: 28px 0px 0px 35px;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
     font-size: 20px;
-
-    color: white;
+    /* font-weight: bold; */
+    color: #fff;
 }
 
-#logo {
-    padding-left: 600px;
-}
-
-#side {
-    padding-left: 100px;
-}
-
-#services {
-    color: white;
-}
-
-#dropDown {
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-#colorOfDropdown {
-    color: white;
-}
-
-#colorOfDropdown:hover {
-    background-color: black;
-}
-
-/* Contact us */
-section {
-    padding: 1rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
-}
-
-ul {
+.navbar-links {
     list-style: none;
-    padding: 0;
+    margin: 0;
+    padding-right: 9px;
+    display: flex;
+    gap: 20px;
+    font-family: "Open Sans";
 }
 
-li {
-    padding: 0.5rem 0;
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.navbar-links a:hover {
+    color: red;
+}
+
+/* Animations */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    background-color: #ffffff;
+    /* White background for sections */
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+    animation: zoomIn 0.6s ease-out, fadeIn 0.6s ease-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Section */
+.profile {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #000000 0%, #434343 100%);
+    /* Dark theme for profile section */
+    color: #ffffff;
+}
+
+.profile h2 {
+    font-size: 28px;
+    color: #ff4d4d;
+    /* Red for contrast */
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px #333;
+}
+
+.profile ul li {
+    font-size: 18px;
+    padding: 0.75rem 0;
+    color: #e0e0e0;
+}
+
+.profile a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+    color: #ff1a1a;
+}
+
+/* Contact Us Section */
+.contact {
+    background: linear-gradient(135deg, #ff4d4d 0%, #ff9999 100%);
+    /* Red gradient theme for contact section */
+    color: #000000;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px #fff;
+}
+
+.contact ul li {
+    font-size: 18px;
+    padding: 0.75rem 0;
+    color: #333;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #4d4d4d;
 }

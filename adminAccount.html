@@ -22,48 +22,38 @@
 </head>
 
 <body>
-    <div class="flex-container">
-        <a href="" id="imgLink"><img class="imgLink" src="img/Logo of homePage.png" alt=""></a>
-        <a href="homePage.html" id="home">
-            <div class="home">Home</div>
-        </a>
-        <a href="about.html" id="about">
-            <div class="about">About</div>
-        </a>
-        <a href="about.html" id="account">
-            <div class="account">Account</div>
-        </a>
-
-        <a href="" id="protfoloio">
-            <div class="protfoloio">Main Website</div>
-        </a>
-
-        <!-- Logo -->
-        <div id="logo">
-            <a id="side" href="#" class="fa fa-instagram"></a>
-            <a id="fa" href="#" class="fa fa-facebook"></a>
-            <a id="fa" href="#" class="fa fa-google"></a>
-            <a id="fa" href="#" class="fa fa-whatsapp"></a>
-            <a id="fa" href="#" class="fa fa-linkedin"></a>
-            <a id="fa" href="#" class="fa fa-twitter"></a>
-        </div>
-    </div>
-    <!-- Admin Account -->
-        <section>
-            <h2>Profile</h2>
-            <ul>
-                <li>Name : Paing Lin Htike</li>
-                <li>Email : <a href="">plh@gmail.com</a></li>
-                <li>Passowrd : ******</li>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar sticky-top">
+            <div class="navbar-brand">
+                <img src="logo.png">
+                <span>Mangaverse</span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="adminAccount.html">Account</a></li>
+                <li><a href="#">Main Website</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
+
+    <!-- Admin Account -->
+    <section class="profile">
+        <h2>Profile</h2>
+        <ul>
+            <li><strong>Name:</strong> Paing Lin Htike</li>
+            <li><strong>Email:</strong> <a href="">plh@gmail.com</a></li>
+            <li><strong>Password:</strong> ******</li>
+        </ul>
+    </section>
 
     <!-- Contact Us -->
-    <section>
+    <section class="contact">
         <h2>Contact Us</h2>
         <ul>
-            <li>Email: <a href="">mangaverse@example.com</a></li>
-            <li>Phone: +959770708354</li>
+            <li><strong>Email:</strong> <a href="">mangaverse@example.com</a></li>
+            <li><strong>Phone:</strong> +959770708354</li>
         </ul>
     </section>
 
